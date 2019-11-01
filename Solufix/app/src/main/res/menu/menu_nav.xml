@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_one"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Listar produtos" />
+
+        <item android:id="@+id/nav_item_produto"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="Buscar produto"/>
+    </group>
+
+    <group android:id="@+id/group_menu">
+        <item android:id="@+id/nav_calculadora"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="Calculadora"/>
+    </group>
+
+
 
 </menu>

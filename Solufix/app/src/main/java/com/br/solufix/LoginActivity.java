@@ -210,9 +210,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         showProgress(false);
                     } else {
                         String token = responseEntity.getAccess_token();
-                        Log.d("sucesso", responseEntity.getAccess_token());
-                        Toast.makeText(LoginActivity.this, "Login", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(LoginActivity.this, ProdutosActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                         intent.putExtra("token", token);
                         startActivity(intent);
                     }

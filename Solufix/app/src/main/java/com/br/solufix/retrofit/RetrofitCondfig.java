@@ -22,21 +22,19 @@ public class RetrofitCondfig {
 
     public RetrofitCondfig() {
         //http://10.0.0.6:8080/
-        //https://solufix.herokuapp.com/
+       //https://solufix-api.herokuapp.com/
         this.retrofit = new Retrofit.Builder().baseUrl("https://solufix-api.herokuapp.com/")
             .addConverterFactory(JacksonConverterFactory.create()).build();
     }
-
-
 
 
     public LoginService getLogin() {
         return this.retrofit.create(LoginService.class);
     }
     public ProdutoService getProdutos() {
-
         return this.retrofit.create(ProdutoService.class);
     }
+
 
     public String getToken() {
         return token;

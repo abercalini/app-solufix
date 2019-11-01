@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/produto_item_foto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/produto_item_nome"
+            android:text="Nome"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/produto_item_descricao"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/produto_item_quantidade"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/produto_item_valor"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:textColor="#ff00"/>
+    </LinearLayout>
+
+
+</LinearLayout>

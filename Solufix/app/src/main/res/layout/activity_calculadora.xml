@@ -1,33 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculadoraActivity">
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_calculadora" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="OBS: A conta a seguir, é representada por ((comprimento * largura) * profundidade)"/>
 
-</android.support.design.widget.CoordinatorLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calculador_comprimento"
+        android:layout_marginTop="20dp"
+        android:hint="Comprimento"
+        android:inputType="number"
+        android:background="@drawable/rounded_editetext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calculador_largura"
+        android:layout_marginTop="10dp"
+        android:hint="Largura"
+        android:inputType="number"
+        android:background="@drawable/rounded_editetext"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calculador_profundidade"
+        android:layout_marginTop="10dp"
+        android:hint="Profundidade"
+        android:inputType="number"
+        android:background="@drawable/rounded_editetext"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valor_comprimento"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiplicar"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valor_largura"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiplicarAux"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valor_profundidade"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculadora_resultado"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#8BC34A"
+            android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>
